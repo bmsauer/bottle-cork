@@ -31,7 +31,6 @@ class MongoTable(Table):
         """Create collection index."""
         self._coll.create_index(
             self._key_name,
-            drop_dups=True,
             unique=True,
         )
 
